@@ -3,25 +3,25 @@ package oopConcepts;
 
 class Car {
 	   public void move() {
-	      System.out.println("Cars are good means of transport");
+	      System.out.println("Cars are good means of transport\n");
 	   }
 	}
 
 	class BMW extends Car {
 	   public void move() {
-	      System.out.println("BMW is really cool car");
+	      System.out.println("BMW is really cool car\n");
 	   }
 	}
 	
 	class Power extends Car {
 		public void move() {
-			System.out.println("BMW has v8 engine power");
+			System.out.println("BMW has v8 engine power\n");
 		}
 	}
 	
 	class Model extends Car{
 		public void move() {
-			System.out.println("BMW 5 series is the new great model");
+			System.out.println("BMW 5 series is the new great model\n");
 		}
 	}
 
