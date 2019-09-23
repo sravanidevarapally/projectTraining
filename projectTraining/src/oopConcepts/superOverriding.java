@@ -12,15 +12,31 @@ class Car {
 	      System.out.println("BMW is really cool car");
 	   }
 	}
+	
+	class Power extends Car {
+		public void move() {
+			System.out.println("BMW has v8 engine power");
+		}
+	}
+	
+	class Model extends Car{
+		public void move() {
+			System.out.println("BMW 5 series is the new great model");
+		}
+	}
 
 	public class superOverriding {
 
 	   public static void main(String args[]) {
-	      Car a = new Car();   // Animal reference and object
-	      Car b = new BMW();   // Animal reference but Dog object
+	      Car a = new Car();   // Car reference and object
+	      Car b = new BMW();  // Car reference but BMW object
+	      Car c = new Power(); // Car reference but Power object
+	      Car d = new Model(); // Car reference but Model object
 
-	      a.move();   // runs the method in Animal class
-	      b.move();   // runs the method in Dog class
+	      a.move();   // runs the method in Car class
+	      b.move();   // runs the method in BMW class
+	      c.move();   // runs the method in Power class
+	      d.move();   // runs the method in Model class
 	   }
 	}
 
